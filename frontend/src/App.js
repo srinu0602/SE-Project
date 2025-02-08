@@ -4,11 +4,14 @@ import SignUp from './SignUp';
 
 function App() {
 
- 
+  const [name, setName] = useState('');
 
   return (
     <div className="App">
-      <SignUp/>
+      <SignUp
+        name = {name}
+        setName = {setName}
+      />
     </div>
   );
 }
