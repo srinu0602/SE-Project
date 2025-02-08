@@ -6,6 +6,7 @@ function App() {
 
   const [name, setName] = useState('');
   const [email,setEmail] = useState('');
+  const [phone,setPhone] = useState('');
 
   return (
     <div className="App">
@@ -14,6 +15,8 @@ function App() {
         setName = {setName}
         email = {email}
         setEmail = {setEmail}
+        phone = {phone}
+        setPhone = {setPhone}
       />
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SignUp = ({name,setName,email,setEmail}) => {
+const SignUp = ({name,setName,email,setEmail,phone,setPhone}) => {
 
 
   return (
@@ -16,6 +16,17 @@ const SignUp = ({name,setName,email,setEmail}) => {
         Email:
         <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </label>
+
+      <label>
+        Phone Number:
+        <input
+        type="tel" 
+        placeholder="Enter your phone number" 
+        value={phone} 
+        onChange={(e) => setPhone(e.target.value)} 
+        />
+      </label>
+      
       </form>
     </div>
   )
