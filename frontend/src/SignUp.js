@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SignUp = ({name,setName,email,setEmail,phone,setPhone}) => {
+const SignUp = ({name,setName,email,setEmail,phone,setPhone,password,setPassword}) => {
 
 
   return (
@@ -26,7 +26,17 @@ const SignUp = ({name,setName,email,setEmail,phone,setPhone}) => {
         onChange={(e) => setPhone(e.target.value)} 
         />
       </label>
-      
+
+      <label>
+        Password:
+        <input 
+          type="password" 
+          placeholder="Set up your password" 
+          value={password} 
+          onChange={(e) => setPassword(e.target.value)} 
+        />
+      </label>
+
       </form>
     </div>
   )

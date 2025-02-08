@@ -7,6 +7,7 @@ function App() {
   const [name, setName] = useState('');
   const [email,setEmail] = useState('');
   const [phone,setPhone] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <div className="App">
@@ -17,6 +18,8 @@ function App() {
         setEmail = {setEmail}
         phone = {phone}
         setPhone = {setPhone}
+        password = {password}
+        setPassword = {setPassword}
       />
     </div>
   );
