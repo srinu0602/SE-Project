@@ -1,18 +1,23 @@
-**UF ShopEase** - A smart and reliable e-commerce platform.
+**ReitzEats** - Reitz Union Food Ordering Platform.
 
 **Contributors:**
 - **Front End:** Praneeth Buchepalli, Deepika Muchukota
 - **Back End:** Kamal Kandula, Srinivas Kommineni
 
 **Problem Statement:**
-Efficient online shopping platforms are essential for businesses and customers to simplify product browsing, transactions, and order management while ensuring security and user satisfaction. UF ShopEase addresses these needs by providing a reliable and user-friendly solution for e-commerce.
+This project is a comprehensive online food ordering solution designed specifically for the University of Florida’s Reitz Union. It provides students, faculty, and staff with a seamless way to browse, order, and track food from various restaurants and shops within the union—all through a single platform.
 
 **About:**
-**"UF ShopEase"** is a robust e-commerce platform built with React.js for an interactive and responsive front-end and Golang for a fast and scalable back-end. Designed to cater to both businesses and customers, it simplifies online shopping with seamless product browsing, secure transactions, and real-time tracking. For businesses, UF ShopEase includes an intuitive admin dashboard for efficient inventory and sales management, ensuring smooth operations.
+"**ReitzEats**" is a comprehensive online food ordering platform designed specifically for the University of Florida’s Reitz Union. Built with React.js for a seamless and interactive front-end and Golang for a fast, scalable back-end, it streamlines food ordering for students, faculty, and staff. Users can effortlessly browse menus, place orders, and make secure payments while tracking their meals in real time. Restaurants benefit from an intuitive admin dashboard for efficient order management, inventory tracking, and sales analytics, ensuring a smooth and efficient dining experience across the Reitz Union.
 
 **Key Features:**
-- **Seamless Product Browsing:** Offers a smooth and interactive product discovery experience for customers.
-- **Secure Transactions:** Implements secure payment methods to ensure safe and reliable transactions.
-- **Real-Time Order Tracking:** Enables users to track the status and delivery of their orders in real-time.
-- **Intuitive Admin Dashboard:** Simplifies inventory and sales management for business owners.
-- **Optimized Performance:** Leverages React.js and Golang for fast, scalable, and efficient functionality.
+    **Unified Registration**: Users only need to sign up once to access all participating restaurants and stores at the Reitz Union.
+    **Restaurant & Menu Access**: View menus, special deals, and available food options from all eateries in one place.
+    **Seamless Ordering**: Easily place orders from multiple vendors within the Reitz Union.
+    **Real-Time Order Tracking**: Monitor the status of ongoing orders, from preparation to pickup/delivery.
+    **Secure Payments & Transactions**: Supports multiple payment methods, including credit/debit cards, UF meal plans, and digital wallets.
+    **Reward System**: Earn points for every purchase and redeem them for free meals or discounts.
+    **Order History & Reordering**: Users can access past orders for easy reordering and tracking expenses.
+   **Notifications & Alerts**: Get updates on order status, exclusive deals, and loyalty rewards.
+
+
