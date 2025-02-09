@@ -24,7 +24,7 @@ const stalls = [
           <div
             key={index}
             className="stall-button"
-            style={{ backgroundColor: stall.color }} // Dynamically setting background color
+            style={{ backgroundColor: stall.color }} 
           >
             <img src={stall.image} alt={stall.name} className="stall-image" />
             <p className="stall-name">{stall.name}</p>
