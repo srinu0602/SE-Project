@@ -12,16 +12,16 @@ function App() {
   };
 
   return (
-    <div className="App">
-      `{showSignIn ? (
-        <SignIn />
-      ) : (
-        <SignUp />
-      )}
-      <button onClick={toggleForm}>
-        {showSignIn ? 'Switch to Sign Up' : 'Switch to Sign In'}
-      </button>`
-      {/* <FoodStalls/> */}
+     <div className="App">
+    {/* //   `{showSignIn ? (
+    //     <SignIn />
+    //   ) : (
+    //     <SignUp />
+    //   )}
+    //   <button onClick={toggleForm}>
+    //     {showSignIn ? 'Switch to Sign Up' : 'Switch to Sign In'}
+    //   </button>` */}
+       <FoodStalls/> 
     </div>
   );
 }
