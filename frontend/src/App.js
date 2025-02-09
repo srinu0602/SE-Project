@@ -5,7 +5,7 @@ import SignUp from './SignUp';
 import FoodStalls from './FoodStalls';
 
 function App() {
-  const [showSignIn, setShowSignIn] = useState(true); // Start with SignIn
+  const [showSignIn, setShowSignIn] = useState(true); 
 
   const toggleForm = () => {
     setShowSignIn(!showSignIn);
@@ -21,6 +21,7 @@ function App() {
       <button onClick={toggleForm}>
         {showSignIn ? 'Switch to Sign Up' : 'Switch to Sign In'}
       </button>`
+      {/* <FoodStalls/> */}
     </div>
   );
 }
