@@ -1,26 +1,25 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import SignIn from './SignIn';
 import SignUp from './SignUp';
 
 function App() {
+  const [showSignIn, setShowSignIn] = useState(true); // Start with SignIn
 
-  const [name, setName] = useState('');
-  const [email,setEmail] = useState('');
-  const [phone,setPhone] = useState('');
-  const [password, setPassword] = useState('');
+  const toggleForm = () => {
+    setShowSignIn(!showSignIn);
+  };
 
   return (
     <div className="App">
-      <SignUp
-        name = {name}
-        setName = {setName}
-        email = {email}
-        setEmail = {setEmail}
-        phone = {phone}
-        setPhone = {setPhone}
-        password = {password}
-        setPassword = {setPassword}
-      />
+      {showSignIn ? (
+        <SignIn />
+      ) : (
+        <SignUp />
+      )}
+      <button onClick={toggleForm}>
+        {showSignIn ? 'Switch to Sign Up' : 'Switch to Sign In'}
+      </button>
     </div>
   );
 }
