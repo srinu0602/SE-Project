@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import cafeteriaBg from "./cafeteria-bg.jpg";
+import "./SignUp.css";
 
 const SignUp = ({name,setName,email,setEmail,phone,setPhone,password,setPassword,confirmPassword,confirmSetPassword,errors,setErrors,passwordFocused,setPasswordFocused}) => {
 
@@ -33,22 +35,37 @@ const SignUp = ({name,setName,email,setEmail,phone,setPhone,password,setPassword
   };
 
   return (
-    <div>
-      <form className='sign-up-form' onSubmit={handleSubmit}>
-
-      <label>
+    <div className='sign-up-page'
+    style={{
+        backgroundImage: `url(${cafeteriaBg})`,
+        backgroundSize: "cover",
+        height: "100vh",
+        width: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}>
+      <form className='sign-up-form' onSubmit={handleSubmit}
+      >
+      <h2>Sign Up</h2>
+      <div className='signup-inp'>
+      <label >
         Name:
         <input autoFocus placeholder="Enter your name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
         {errors.name && <span className="error">{errors.name}</span>}
       </label>
+      </div>
 
-      <label>
+      <div className='signup-inp'>
+      <label >
         Email:
         <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} />
         {errors.email && <span className="error">{errors.email}</span>}
       </label>
+      </div>
 
-      <label>
+      <div className='signup-inp'>
+      <label >
         Phone Number:
         <input
         type="tel" 
@@ -58,8 +75,10 @@ const SignUp = ({name,setName,email,setEmail,phone,setPhone,password,setPassword
         />
         {errors.phone && <span className="error">{errors.phone}</span>}
       </label>
+      </div>
 
-      <label>
+      <div className='signup-inp'>
+      <label >
         Password:
         <input 
           type="password" 
@@ -80,14 +99,17 @@ const SignUp = ({name,setName,email,setEmail,phone,setPhone,password,setPassword
           </div>
         )}
       </label>
+      </div>
 
+      <div className='signup-inp' >
       <label>
         Confirm Password:
         <input type="password" placeholder="Re-enter your password" value={confirmPassword} onChange={(e) => confirmSetPassword(e.target.value)} />
         {errors.confirmPassword && <span className="error">{errors.confirmPassword}</span>}
       </label>
+      </div>
 
-      <button type="submit" disabled={Object.keys(errors).length > 0}>Sign Up</button>
+      <button className='signup-btn' type="submit" disabled={Object.keys(errors).length > 0}>Sign Up</button>
 
       </form>
     </div>
