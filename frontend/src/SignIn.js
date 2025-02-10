@@ -1,7 +1,16 @@
-import React from "react";
-import cafeteriaBg from "./cafeteria-bg.jpg"; 
+import React, { useState } from "react";
+import { Link } from 'react-router-dom'; // Import Link for navigation
+import cafeteriaBg from "./cafeteria-bg.jpg"; // Import background image
 
-const SignIn = () => {
+const SignIn = ({ onSignIn }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSignIn(email, password); // Call the parent function to authenticate
+  };
+
   return (
     <div
       className="signin-page"
@@ -15,13 +24,16 @@ const SignIn = () => {
         justifyContent: "center",
       }}
     >
-        <div className="signin-container">
+      <div className="signin-container">
         <h2>Sign In</h2>
-            <div className="input-group">
+        <form onSubmit={handleSubmit}>
+          <div className="input-group">
             <label>Email</label>
             <input
               type="email"
               placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
@@ -30,12 +42,16 @@ const SignIn = () => {
             <input
               type="password"
               placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
-          <button type="submit" className="signin-btn">Submit</button>
+          <button type="submit" className="signin-btn">Sign In</button>
+        </form>
         <div className="signin-links">
-          <a href="#">Forgot password?</a> | <a href="#">Sign up</a>
+          {/* Add a link to navigate to the Sign Up page */}
+          Don't have an account? <Link to="/signup">Sign up here</Link>
         </div>
       </div>
     </div>
